@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/pref_title_screen_on"
+        >
+    <CheckBoxPreference
+        android:key="pref_key_screen_always_on"
+        android:title="@string/pref_title_screen_always_on"
+        android:summary="@string/pref_description_screen_always_on"
+        android:defaultValue="true" />
+    </PreferenceCategory>
+    <!--<CheckBoxPreference-->
+        <!--android:key="pref_key_vibrate_on"-->
+        <!--android:title="@string/pref_title_vibrate_on"-->
+        <!--android:singleLine="false"-->
+        <!--android:defaultValue="true" />-->
+    <PreferenceCategory
+        android:key="pref_key_interaction"
+        android:title="@string/pref_title_sensor">
+        <CheckBoxPreference
+            android:key="pref_key_sensor_on"
+            android:title="@string/pref_title_sensor_on"
+            android:defaultValue="true" />
+        <ListPreference
+            android:entries="@array/list_entries"
+            android:entryValues="@array/list_entries_value"
+            android:dialogTitle="灵敏度设置"
+            android:defaultValue="14"
+            android:key="pref_key_sensor_intensity"
+            android:title="@string/pref_title_sensor_intensity" />
+    </PreferenceCategory>
+</PreferenceScreen>
+

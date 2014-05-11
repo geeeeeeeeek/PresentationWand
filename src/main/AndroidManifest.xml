@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="igeak.presentationwand"
+    android:versionCode="1"
+    android:versionName="1.3">
+
+    <!--
+        uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="16" /
+    -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name">
+        <activity
+            android:name="igeak.presentationwand.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="igeak.presentationwand.SettingsActivity"
+            android:label="@string/title_activity_preference">
+
+        </activity>
+        <!--<activity-->
+        <!--android:name="igeak.presentationwand.SplashActivity"-->
+        <!--android:label="@string/title_activity_splash">-->
+
+        <!--</activity>-->
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!--<uses-permission android:name="android.permission.STATUS_BAR"/>-->
+    <uses-permission android:name="android.permission.DISABLE_STATUS_BAR" />
+</manifest>
